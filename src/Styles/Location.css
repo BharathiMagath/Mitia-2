@@ -1,0 +1,100 @@
+/* Location.css */
+
+.service-page {
+    display: flex;
+    flex-direction: row; /* Keep the left and right sides aligned side-by-side */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 20px 20px 20px; /* Adjust padding for spacing */
+    background-color: #b6b595; /* Match background color to homepage */
+    color: #fff; /* Set text color for readability */
+    min-height: 100vh;
+}
+
+.location-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    background-color: rgba(182, 181, 149, 0.7); /* Adjusted color */
+    z-index: 1000;
+}
+
+.left-side {
+    flex: 1; /* Take up available space */
+    padding: 20px;
+    border: 2px solid rgb(79, 2, 123); /* Match border style from homepage boxes */
+    border-radius: 8px;
+    background-color: rgba(182, 181, 149, 0.6); /* Slightly transparent background for effect */
+    margin-right: 20px; /* Spacing between left and right sides */
+    min-width: 300px;
+}
+
+.service-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgb(79, 2, 123); /* Accent color */
+}
+
+.service-description, .contact-info {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 0.9rem; /* Slightly smaller font for details */
+    background-color: rgba(50, 50, 50, 0.8); /* Background color for contact info */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgb(79, 2, 123);
+}
+
+.right-side {
+    flex: 2; /* Map area takes up more space */
+    border: 2px solid rgb(79, 2, 123);
+    border-radius: 8px;
+    background-color: rgba(182, 181, 149, 0.6); /* Match style with left side */
+    padding: 0; /* Remove padding to let iframe fill the entire container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    height: 100vh; /* Make the iframe fill the full height of the viewport */
+    border: none; /* Remove default border */
+    border-radius: 8px;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .service-page {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center align elements */
+        padding: 70px 10px; /* Adjust padding */
+    }
+
+    .left-side, .right-side {
+        width: 90%; /* Ensure both sides take up most of the screen width */
+        margin-bottom: 20px; /* Spacing between stacked sections */
+    }
+
+    .right-side {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+
+    iframe {
+        height: 100%; /* Adjust iframe height for mobile */
+    }
+
+    .service-title {
+        font-size: 1.5rem;
+    }
+
+    .service-description, .contact-info {
+        font-size: 0.9rem;
+    }
+}

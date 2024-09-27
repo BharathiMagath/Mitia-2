@@ -1,0 +1,135 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #b6b595;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .language-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .language-toggle button {
+    background-color: #dcdcdc; /* Light gray */
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .language-toggle button.active {
+    background-color: #4b137b; /* Purple */
+    color: white;
+  }
+  
+  .language-toggle button:hover {
+    background-color: #4b137b; /* Darker purple on hover */
+    color: white;
+  }
+  
+  .chatbox {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .message.user {
+    background-color: #e6f7ff; /* Light blue */
+    color: #007bff; /* Blue */
+    align-self: flex-end;
+  }
+  
+  .message.bot {
+    background-color: #f3e0b8; /* Sandal color */
+    color: #333;
+    align-self: flex-start;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  button {
+    background-color: #4b137b; /* Purple */
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #5a1e9d; /* Darker purple on hover */
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .document-section {
+    margin-top: 15px;
+  }
+  
+  input[type="file"] {
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .chat-container {
+      max-width: 90%;
+      padding: 15px;
+    }
+  
+    .chatbox {
+      height: 250px;
+    }
+  
+    .language-toggle button {
+      padding: 8px 12px;
+    }
+  
+    input[type="text"] {
+      padding: 8px;
+    }
+  
+    button {
+      padding: 8px 12px;
+    }
+  }
+  

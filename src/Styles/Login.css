@@ -1,0 +1,137 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #b6b595, #d4c5af); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Container for the login box */
+  .login-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Login box styling */
+  .login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Input fields */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Gradient button for Login */
+  button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #6e00ff, #b00bff);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /* Button hover effect */
+  button[type="submit"]:hover {
+    background: linear-gradient(90deg, #5b00e6, #9a00e6);
+  }
+  
+  /* Sign Up button */
+  .signup-button {
+    margin-top: 15px;
+    font-size: 14px;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  /* Forgot password link */
+  .forgot-password {
+    margin-top: 10px;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Image container for the GIFs */
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px; /* Space between the form and images */
+  }
+  
+  /* Image styling */
+  .corner-gif {
+    width: 250px; /* Set a fixed width for larger screens */
+    height: auto;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Adjust for mobile devices */
+  @media screen and (max-width: 600px) {
+    .login-box {
+      width: 90%; /* Make the login box more flexible on small screens */
+      padding: 20px; /* Decrease padding */
+    }
+  
+    /* Reduce the size of the images */
+    .corner-gif {
+      width: 150px; /* Make the images smaller on mobile */
+    }
+  
+    /* Adjust font sizes for smaller screens */
+    h2 {
+      font-size: 18px; /* Smaller font size for heading */
+    }
+  
+    input {
+      font-size: 12px; /* Smaller input text size */
+    }
+  
+    button[type="submit"] {
+      font-size: 14px; /* Reduce button font size */
+    }
+  
+    .signup-button {
+      font-size: 12px; /* Adjust the size of the Sign Up button */
+    }
+  }
+  

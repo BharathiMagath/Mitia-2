@@ -1,0 +1,115 @@
+.unique-home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px; /* Reduced padding for better mobile spacing */
+}
+
+.unique-home-page-navbar {
+    width: 100%;
+    padding: 15px;
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Position it at the top */
+    z-index: 1000; /* Ensure it's above other elements */
+   /* background-color: rgba(0, 0, 0, 0.7); /* Add slight transparency for a modern look */
+}
+
+.unique-navbar-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    color: rgb(75, 19, 123);
+    padding: 0;
+    margin: 0;
+}
+
+.unique-navbar-item {
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.unique-home-page-image-container {
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Center the image */
+    width: 100%;
+}
+
+.unique-home-page-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover; /* Maintain the image aspect ratio and prevent shrinking */
+}
+
+/* Grid container for boxes */
+.unique-box-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 20px;
+}
+
+.unique-box {
+    border: 2px solid rgb(79, 2, 123);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left; /* Align content to the left for better readability */
+    background-color: transparent;
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.unique-box-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.unique-box-content {
+    flex-grow: 1;
+}
+
+.unique-box-heading {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .unique-home-page-container {
+        padding-top: 80px; /* Adjust padding for mobile */
+    }
+    
+    .unique-box-container {
+        grid-template-columns: 1fr; /* Switch to one column for smaller screens */
+        gap: 10px; /* Reduce gap between boxes for mobile */
+    }
+
+    .unique-home-page-image {
+        width: 90%; /* Ensure the image takes up most of the screen */
+        height: auto;
+    }
+
+    .unique-box {
+        flex-direction: row; /* Keep the icon and content side by side */
+        padding: 15px;
+        height: auto;
+    }
+
+    .unique-box-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px; /* Ensure appropriate space between icon and text */
+    }
+
+    .unique-box-heading {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+}
